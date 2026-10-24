@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North & Co. — Everyday Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER Rs. 5,000</div>
+  <header class="header">
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <a class="logo" href="#home">NORTH <span>&</span> CO.</a>
+    <nav class="nav" id="nav"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#story">Our Story</a><a
+        href="#contact">Contact</a></nav>
+    <div class="header-actions"><button class="icon-btn" id="adminBtn" title="Store admin">⚙ Manage</button><button
+        class="icon-btn" id="cartBtn">Bag <span class="cart-count" id="cartCount">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">Thoughtful things. Everyday living.</p>
+        <h1>Make room for the good stuff.</h1>
+        <p>Considered essentials for your everyday routine. Simple design, useful details, and quality you can feel.</p>
+        <a class="btn" href="#shop">Explore the collection&nbsp; ↗</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Minimal product-inspired artwork"><span class="sun"></span><span
+          class="art-label">The everyday edit · No. 01</span></div>
+    </section>
+    <div class="benefits">
+      <div class="benefit"><strong>✳</strong><span>Thoughtfully selected</span></div>
+      <div class="benefit"><strong>↗</strong><span>Easy, secure ordering</span></div>
+      <div class="benefit"><strong>♡</strong><span>Made for everyday life</span></div>
+    </div>
+    <section class="section" id="shop">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Find your everyday favourite.</h2>
+          <p class="section-sub">A few good things, picked with care.</p>
+        </div>
+        <div class="tools"><input class="search" id="searchInput" type="search" placeholder="Search products..."
+            aria-label="Search products"></div>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+    <section class="story" id="story">
+      <div class="story-art" aria-hidden="true"></div>
+      <div class="story-copy">
+        <p class="eyebrow">A little about us</p>
+        <h2>Less noise. Better essentials.</h2>
+        <p>We believe the things you use every day should be useful, well-designed, and easy to love. North & Co. is a
+          small edit of practical favourites with a calm, considered feel.</p><a href="#contact"
+          class="btn secondary">Get in touch&nbsp; ↗</a>
+      </div>
+    </section>
+
+    <section class="section" style="background:#f7f6f1">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Featured categories</p>
+          <h2>Shop by category</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px">
+        <div><img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800"
+            style="width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover">
+          <h3>Clothing</h3>
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=800"
+            style="width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover">
+          <h3>Home</h3>
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+            style="width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover">
+          <h3>Accessories</h3>
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800"
+            style="width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover">
+          <h3>Lifestyle</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Customer love</p>
+          <h2>What people are saying</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px">
+        <div style="border:1px solid #e6e7df;padding:22px;border-radius:8px"><strong>★★★★★</strong>
+          <p style="color:#666">Premium quality aur delivery bhi fast.</p><b>Ali R.</b>
+        </div>
+        <div style="border:1px solid #e6e7df;padding:22px;border-radius:8px"><strong>★★★★★</strong>
+          <p style="color:#666">Website bilkul Shopify jaisi feel deti hai.</p><b>Hania M.</b>
+        </div>
+        <div style="border:1px solid #e6e7df;padding:22px;border-radius:8px"><strong>★★★★★</strong>
+          <p style="color:#666">Minimal design aur easy checkout.</p><b>Usman K.</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#f7f6f1">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Instagram</p>
+          <h2>Fresh looks</h2>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+          style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500"
+          style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+          style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500"
+          style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+      </div>
+      <div style="display:grid;gap:12px">
+        <div style="border:1px solid #e6e7df;padding:16px;border-radius:6px"><b>Delivery kitne din mein?</b>
+          <p>Pakistan mein aam tor par 2–5 working days.</p>
+        </div>
+        <div style="border:1px solid #e6e7df;padding:16px;border-radius:6px"><b>Return policy?</b>
+          <p>7-day return demo policy.</p>
+        </div>
+        <div style="border:1px solid #e6e7df;padding:16px;border-radius:6px"><b>Payment?</b>
+          <p>WhatsApp checkout se details confirm hoti hain.</p>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter" id="contact">
+      <p class="eyebrow">Stay in the loop</p>
+      <h2>Good things, occasionally.</h2>
+      <p>Get product updates and new arrivals in your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm"><input type="email" id="newsletterEmail"
+          placeholder="Your email address" aria-label="Your email address" required><button class="btn"
+          type="submit">Sign me up</button></form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top">
+      <div><a class="logo" href="#home">NORTH <span>&</span> CO.</a>
+        <p>Everyday essentials, thoughtfully selected.<br>Made for the little moments.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links"><a href="#shop">Shop all</a><a href="#story">Our story</a><a
+            href="#contact">Contact</a></div>
+      </div>
+      <div>
+        <h4>Customer care</h4>
+        <div class="footer-links"><a href="#contact">Shipping information</a><a href="#contact">Returns &
+            exchanges</a><a href="#contact">FAQs</a></div>
+      </div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> North & Co. All rights reserved.</span><span>Thoughtfully
+        made for everyday.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="drawer-head">
+      <h3>Your bag <span id="drawerCount"></span></h3><button class="close-btn" id="closeCart"
+        aria-label="Close bag">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter"></div>
+  </aside>
+  <div class="modal-wrap" id="adminModal">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Store manager</h3><button class="close-btn" id="closeAdmin" aria-label="Close manager">×</button>
+      </div>
+      <div id="adminContent"></div>
+    </div>
+  </div>
+  <div class="modal-wrap" id="productModal">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="productModalTitle">Add product</h3><button class="close-btn" id="closeProduct"
+          aria-label="Close product form">×</button>
+      </div>
+      <form id="productForm"><input type="hidden" id="editId">
+        <div class="form-grid">
+          <div class="field full"><label for="pName">Product name *</label><input id="pName" required maxlength="90"
+              placeholder="e.g. Everyday Tote"></div>
+          <div class="field"><label for="pPrice">Price (PKR) *</label><input id="pPrice" type="number" min="0" required>
+          </div>
+          <div class="field"><label for="pOldPrice">Old price (optional)</label><input id="pOldPrice" type="number"
+              min="0"></div>
+          <div class="field"><label for="pCategory">Category *</label><input id="pCategory" required
+              placeholder="Accessories"></div>
+          <div class="field"><label for="pTag">Label</label><select id="pTag">
+              <option value="">None</option>
+              <option>New</option>
+              <option>Bestseller</option>
+              <option>Sale</option>
+            </select></div>
+          <div class="field full"><label for="pImage">Image URL (optional)</label><input id="pImage" type="url"
+              placeholder="https://example.com/image.jpg"></div>
+          <div class="field full"><label for="pDesc">Short description (optional)</label><textarea id="pDesc"
+              placeholder="A few words about the product"></textarea></div>
+        </div>
+        <div class="modal-actions"><button class="btn secondary" type="button" id="cancelProduct">Cancel</button><button
+            class="btn" type="submit">Save product</button></div>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script>
+    const STORAGE_PRODUCTS = 'northco_products_v1', STORAGE_CART = 'northco_cart_v1', STORAGE_SETTINGS = 'northco_settings_v1';
+    const starterProducts = [
+      {id: 1, name: 'Everyday Canvas Tote', price: 1850, oldPrice: 2200, category: 'Accessories', tag: 'Bestseller', tone: '', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800', desc: 'A roomy everyday carry-all.'},
+      {id: 2, name: 'Stoneware Coffee Mug', price: 1250, oldPrice: 0, category: 'Home', tag: 'New', tone: 'warm', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=800', desc: 'A quiet moment in your morning routine.'},
+      {id: 3, name: 'Essential Cotton Tee', price: 2200, oldPrice: 0, category: 'Clothing', tag: '', tone: 'blue', image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800', desc: 'A comfortable everyday staple.'},
+      {id: 4, name: 'Soft Everyday Pouch', price: 950, oldPrice: 1200, category: 'Accessories', tag: 'Sale', tone: 'rose', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800', desc: 'Small storage, big usefulness.'},
+      {id: 5, name: 'Minimal Desk Bottle', price: 1750, oldPrice: 0, category: 'Lifestyle', tag: '', tone: 'dark', image: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800', desc: 'Hydration that travels with you.'},
+      {id: 6, name: 'Linen Cushion Cover', price: 1450, oldPrice: 0, category: 'Home', tag: 'New', tone: 'warm', image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800', desc: 'A softer touch for your space.'},
+      {id: 7, name: 'Daily Carry Cap', price: 1350, oldPrice: 0, category: 'Clothing', tag: '', tone: 'blue', image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=800', desc: 'An easy finishing touch.'},
+      {id: 8, name: 'Pocket Notebook Set', price: 750, oldPrice: 900, category: 'Lifestyle', tag: 'Bestseller', tone: 'rose', image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800', desc: 'Make space for your next idea.'}
+    ];
+    const read = (key, fallback) => {try {const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback} catch {return fallback} };
+    let products = read(STORAGE_PRODUCTS, starterProducts), cart = read(STORAGE_CART, []), activeCategory = 'All', searchTerm = '', adminUnlocked = false;
+    let settings = read(STORAGE_SETTINGS, {whatsapp: '', adminPassword: 'admin123'});
+    const $ = id => document.getElementById(id);
+    const money = n => 'Rs. ' + Number(n || 0).toLocaleString('en-PK');
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+    function save() {localStorage.setItem(STORAGE_PRODUCTS, JSON.stringify(products)); localStorage.setItem(STORAGE_CART, JSON.stringify(cart)); localStorage.setItem(STORAGE_SETTINGS, JSON.stringify(settings))}
+    function toast(msg) {$('toast').textContent = msg; $('toast').classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => $('toast').classList.remove('show'), 2300)}
+    function visual(p, mini = false) {if (p.image) return `<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="product-placeholder hidden" data-tone="${esc(p.tone || '')}"><span class="shape">NORTH & CO.</span></div>`; return `<div class="product-placeholder" data-tone="${esc(p.tone || '')}"><span class="shape">NORTH & CO.</span></div>`}
+    function renderFilters() {const cats = ['All', ...new Set(products.map(p => p.category).filter(Boolean))]; $('filters').innerHTML = cats.map(c => `<button class="filter-btn ${activeCategory === c ? 'active' : ''}" data-cat="${esc(c)}">${esc(c)}</button>`).join(''); $('filters').querySelectorAll('button').forEach(b => b.onclick = () => {activeCategory = b.dataset.cat; renderFilters(); renderProducts()})}
+    function renderProducts() {const list = products.filter(p => (activeCategory === 'All' || p.category === activeCategory) && (`${p.name} ${p.category} ${p.desc || ''}`).toLowerCase().includes(searchTerm.toLowerCase())); $('productGrid').innerHTML = list.length ? list.map(p => `<article class="product-card"><div class="product-image">${visual(p)}${p.tag ? `<span class="tag">${esc(p.tag)}</span>` : ''}<button class="quick-add" data-add="${p.id}">＋ Add to bag</button></div><div class="product-info"><div class="product-category">${esc(p.category)}</div><div class="product-title">${esc(p.name)}</div><div class="product-bottom"><div class="price">${money(p.price)}${p.oldPrice ? ` <span class="old-price">${money(p.oldPrice)}</span>` : ''}</div><span class="stars">✦ 4.9</span></div></div></article>`).join('') : `<div class="empty">No products found. Try another search or category.</div>`; $('productGrid').querySelectorAll('[data-add]').forEach(b => b.onclick = () => addToCart(Number(b.dataset.add)))}
+    function addToCart(id) {const p = products.find(x => x.id === id); if (!p) return; const item = cart.find(x => x.id === id); if (item) item.qty++; else cart.push({id, qty: 1}); save(); renderCart(); toast('Added to your bag')}
+    function changeQty(id, delta) {const item = cart.find(x => x.id === id); if (!item) return; item.qty += delta; if (item.qty < 1) cart = cart.filter(x => x.id !== id); save(); renderCart()}
+    function removeCart(id) {cart = cart.filter(x => x.id !== id); save(); renderCart()}
+    function renderCart() {
+      cart = cart.filter(i => products.some(p => p.id === i.id)); const count = cart.reduce((n, i) => n + i.qty, 0); $('cartCount').textContent = count; $('drawerCount').textContent = count ? `(${count})` : ''; if (!cart.length) {$('cartItems').innerHTML = '<div class="cart-empty"><div style="font-size:36px;margin-bottom:10px">♡</div><strong>Your bag is taking a little break.</strong><p style="font-size:12px">Add something you love to get started.</p><button class="btn" id="browseBtn">Explore products</button></div>'; $('cartFooter').innerHTML = ''; $('browseBtn').onclick = closeCart; return }
+      $('cartItems').innerHTML = cart.map(i => {const p = products.find(x => x.id === i.id); return `<div class="cart-row"><div class="mini-img">${visual(p, true)}</div><div><h4>${esc(p.name)}</h4><p>${money(p.price)}</p><div class="qty"><button data-dec="${p.id}" aria-label="Decrease quantity">−</button><span>${i.qty}</span><button data-inc="${p.id}" aria-label="Increase quantity">+</button></div><button class="remove" data-remove="${p.id}">Remove</button></div><strong style="font-size:12px">${money(p.price * i.qty)}</strong></div>`}).join('');
+      const subtotal = cart.reduce((n, i) => n + products.find(p => p.id === i.id).price * i.qty, 0); $('cartFooter').innerHTML = `<div class="subtotal"><span>Subtotal</span><span>${money(subtotal)}</span></div><div class="shipping-note">Shipping and delivery details can be confirmed at checkout.</div><button class="btn" id="checkoutBtn">Checkout via WhatsApp ↗</button><button class="btn secondary" id="continueBtn" style="width:100%">Continue shopping</button>`;
+      $('cartItems').querySelectorAll('[data-dec]').forEach(b => b.onclick = () => changeQty(+b.dataset.dec, -1)); $('cartItems').querySelectorAll('[data-inc]').forEach(b => b.onclick = () => changeQty(+b.dataset.inc, 1)); $('cartItems').querySelectorAll('[data-remove]').forEach(b => b.onclick = () => removeCart(+b.dataset.remove)); $('checkoutBtn').onclick = checkout; $('continueBtn').onclick = closeCart; save()
+    }
+    function openCart() {$('overlay').classList.add('open'); $('cartDrawer').classList.add('open')} function closeCart() {$('overlay').classList.remove('open'); $('cartDrawer').classList.remove('open')}
+    function checkout() {if (!cart.length) return; const lines = cart.map(i => {const p = products.find(x => x.id === i.id); return `${p.name} x ${i.qty} — ${money(p.price * i.qty)}`}); const total = cart.reduce((n, i) => n + products.find(p => p.id === i.id).price * i.qty, 0); const msg = `Assalam-o-Alaikum! I'd like to place an order:\\n\\n${lines.join('\\n')}\\n\\nSubtotal: ${money(total)}\\n\\nPlease confirm availability, delivery charges and payment details.`; if (!settings.whatsapp) {toast('Add your WhatsApp number in Store Manager first'); openAdmin(); return } const phone = settings.whatsapp.replace(/\D/g, ''); window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');}
+    function openAdmin() {$('adminModal').classList.add('open'); renderAdmin()}
+    function closeAdmin() {$('adminModal').classList.remove('open')}
+    function renderAdmin() {
+      const host = $('adminContent'); if (!adminUnlocked) {host.innerHTML = `<div class="admin-login"><p style="font-size:13px;color:var(--muted)">Manage your products and store settings. This demo saves data in this browser only.</p><form id="loginForm"><div class="field"><label for="adminPass">Admin password</label><input id="adminPass" type="password" required placeholder="Enter password"></div><p class="admin-hint">Default demo password: <strong>admin123</strong>. Change it after logging in.</p><div class="modal-actions"><button class="btn" type="submit">Unlock manager</button></div></form></div>`; $('loginForm').onsubmit = e => {e.preventDefault(); if ($('adminPass').value === settings.adminPassword) {adminUnlocked = true; renderAdmin()} else toast('Incorrect password');}; return }
+      host.innerHTML = `<div class="admin-bar"><span><strong>${products.length}</strong> products · Store controls</span><button class="small-btn" id="logoutAdmin">Lock manager</button></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"><button class="btn" id="addProductBtn">＋ Add product</button><button class="btn secondary" id="settingsBtn">Store settings</button><button class="btn secondary" id="exportBtn">Export products</button><button class="btn secondary" id="resetBtn">Reset demo</button></div><div class="admin-list">${products.map(p => `<div class="admin-item"><div><strong>${esc(p.name)}</strong><small>${esc(p.category)} · ${money(p.price)}</small></div><div class="admin-item-actions"><button class="small-btn" data-edit="${p.id}">Edit</button><button class="small-btn delete" data-delete="${p.id}">Delete</button></div></div>`).join('') || '<p>No products yet. Add your first product.</p>'}<p class="admin-hint">Important: this is a browser-based demo manager, not a secure production admin. Changes are stored locally on this device.</p></div>`;
+      $('logoutAdmin').onclick = () => {adminUnlocked = false; renderAdmin()}; $('addProductBtn').onclick = () => openProductForm(); $('settingsBtn').onclick = renderSettings; $('exportBtn').onclick = () => {const blob = new Blob([JSON.stringify(products, null, 2)], {type: 'application/json'}); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = 'north-co-products.json'; a.click(); URL.revokeObjectURL(url)}; $('resetBtn').onclick = () => {if (confirm('Reset products to the original demo collection? Your current product edits will be lost.')) {products = starterProducts.map(p => ({...p})); save(); renderAll(); renderAdmin(); toast('Demo products restored')} }; host.querySelectorAll('[data-edit]').forEach(b => b.onclick = () => openProductForm(Number(b.dataset.edit))); host.querySelectorAll('[data-delete]').forEach(b => b.onclick = () => {const p = products.find(p => p.id === Number(b.dataset.delete)); if (p && confirm(`Delete "${p.name}"?`)) {products = products.filter(x => x.id !== p.id); cart = cart.filter(x => x.id !== p.id); save(); renderAll(); renderAdmin(); toast('Product deleted')} })
+    }
+    function renderSettings() {const host = $('adminContent'); host.innerHTML = `<button class="small-btn" id="backAdmin">← Back to products</button><form id="settingsForm" style="margin-top:18px"><div class="form-grid"><div class="field full"><label for="whatsapp">WhatsApp number (country code + number)</label><input id="whatsapp" placeholder="923001234567" value="${esc(settings.whatsapp)}"><small style="color:var(--muted)">Pakistan example: 923001234567 (no + or spaces needed).</small></div><div class="field full"><label for="newPassword">New admin password</label><input id="newPassword" type="password" placeholder="Leave blank to keep current password"></div></div><div class="modal-actions"><button class="btn" type="submit">Save settings</button></div></form><p class="admin-hint">WhatsApp checkout opens a pre-filled order message. No payment is processed by this demo.</p>`; $('backAdmin').onclick = renderAdmin; $('settingsForm').onsubmit = e => {e.preventDefault(); settings.whatsapp = $('whatsapp').value.trim(); if ($('newPassword').value) settings.adminPassword = $('newPassword').value; save(); toast('Settings saved'); renderAdmin()}}
+    function openProductForm(id = null) {const p = id ? products.find(x => x.id === id) : null; $('productModalTitle').textContent = p ? 'Edit product' : 'Add product'; $('editId').value = p ? p.id : ''; $('pName').value = p?.name || ''; $('pPrice').value = p?.price ?? ''; $('pOldPrice').value = p?.oldPrice || ''; $('pCategory').value = p?.category || ''; $('pTag').value = p?.tag || ''; $('pImage').value = p?.image || ''; $('pDesc').value = p?.desc || ''; $('productModal').classList.add('open')}
+    function closeProduct() {$('productModal').classList.remove('open')}
+    $('productForm').onsubmit = e => {e.preventDefault(); const id = $('editId').value ? Number($('editId').value) : Date.now(); const old = products.find(p => p.id === id); const name = $('pName').value.trim(), price = Number($('pPrice').value); if (!name || !Number.isFinite(price) || price < 0) return; const p = {id, name, price, oldPrice: Number($('pOldPrice').value) || 0, category: $('pCategory').value.trim(), tag: $('pTag').value, tone: old?.tone || '', image: $('pImage').value.trim(), desc: $('pDesc').value.trim()}; if (old) products = products.map(x => x.id === id ? p : x); else products.unshift(p); save(); renderAll(); closeProduct(); renderAdmin(); toast(old ? 'Product updated' : 'Product added')};
+    function renderAll() {renderFilters(); renderProducts(); renderCart()}
+    $('searchInput').addEventListener('input', e => {searchTerm = e.target.value; renderProducts()}); $('cartBtn').onclick = openCart; $('closeCart').onclick = closeCart; $('overlay').onclick = closeCart; $('adminBtn').onclick = openAdmin; $('closeAdmin').onclick = closeAdmin; $('closeProduct').onclick = closeProduct; $('cancelProduct').onclick = closeProduct; $('menuBtn').onclick = () => $('nav').classList.toggle('open'); $('nav').querySelectorAll('a').forEach(a => a.onclick = () => $('nav').classList.remove('open')); $('newsletterForm').onsubmit = e => {e.preventDefault(); toast('Thanks for subscribing! Connect an email service for real sign-ups.'); $('newsletterEmail').value = ''};
+    $('year').textContent = new Date().getFullYear(); renderAll();
+  </script>
+</body>
+
+</html>
